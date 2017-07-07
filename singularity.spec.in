@@ -31,6 +31,9 @@
 %define slurm 0
 %endif
 
+# The debug package fails, and stops other from building. So disable it...
+%define debug_package %{nil}
+
 Summary: Application and environment virtualization
 Name: singularity
 Version: @PACKAGE_VERSION@

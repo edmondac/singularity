@@ -7,7 +7,7 @@ module load bluebear
 module load Autotools/20150215-foss-2016.10
 
 ./autogen.sh
-./configure
+./configure --with-slurm
 make dist
 rpmbuild -ta singularity-*.tar.gz
 
